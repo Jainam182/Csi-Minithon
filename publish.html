@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a Blog - My Blog</title>
+    <style>
+        body {
+            background-image: url(img4.jpg);
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .blog-form input[type="text"],
+        .blog-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .blog-form textarea {
+            min-height: 150px;
+        }
+
+        .blog-form button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .blog-form button:hover {
+            background-color: #45a049;
+        }
+
+        .button{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body background="work.png">
+    <header class="header">
+        <h1 class="header__title">Write a Blog</h1>
+    </header>
+    <div class="container">
+        <form class="blog-form" action="post_blog.php" method="post">
+            <label for="title" class="blog-form__label">Title:</label>
+            <input type="text" id="title" name="title" class="blog-form__input" required>
+
+            <label for="author" class="blog-form__label">Author:</label>
+            <input type="text" id="author" name="author" class="blog-form__input" required>
+
+            <label for="content" class="blog-form__label">Content:</label>
+            <textarea id="content" name="content" class="blog-form__textarea" required></textarea>
+
+            <div class="button"><button type="submit" class="blog-form__button">Post Blog</button></div>
+
+        </form>
+    </div>
+</body>
+</html>
